@@ -1,6 +1,6 @@
 // Crea un programa que verifique si un número es par o impar.
 void main() {
-  numParImp(2);
+  numParImp(4);
   numParImp(3);
   numParImp(13);
   numParImp(18);
