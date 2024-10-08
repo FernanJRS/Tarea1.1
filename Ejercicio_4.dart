@@ -2,8 +2,8 @@
 // de otra lista.
 
 void main() {
-  List lis1 = [2, 3, 4, 'Hola', true, 'XxX', 1];
-  List lis2 = [1, 2, 4, 'Hola', false, 'xxx', 1];
+  List lis1 = [2, 3, 4, 'Hola', true, 'XxX', 1, 'y', List.empty(), 1, 1, 1];
+  List lis2 = [1, 2, 4, 'Hola', false, 'xxx', 1, true, true, true];
 
   final lis4 = listaUnica(lista1: lis2, lista2: lis1);
   final lis3 = listaUnica(lista1: lis1, lista2: lis2);
@@ -19,8 +19,8 @@ List? listaUnica({required List lista1, required List lista2}) {
   List? lista3 = [...lista2];
 
   for (int i = 0; i < lista1.length; i++) {
-    for (int j = 0; j < lista3.length; j++) {
-      if (lista1.elementAt(i) == lista3.elementAt(j)) lista3.removeAt(j);
+    for (int j = 0; j < lista2.length; j++) {
+      if (lista1.elementAt(i) == lista2.elementAt(j)) lista3.remove(lista2[j]);
     }
   }
 
