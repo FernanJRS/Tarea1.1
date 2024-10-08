@@ -8,10 +8,13 @@ void main() {
 
   ordenarLista(numeros, false);
   print(numeros);
+
+  ordenarLista(numeros, true);
+  print(numeros);
 }
 
 // Si la variable ordenarAscendente es true se ordenaran de forma ascendente
-// En caso contrario se ordenaran de forma descendente
+// En caso contrario se ordenaran de forma descendente.
 void ordenarLista(List<num> list, bool ordenarAscendente) {
   num temp = 0;
   int cont = 0;

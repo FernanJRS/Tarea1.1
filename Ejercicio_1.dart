@@ -6,6 +6,9 @@ void main() {
   numParImp(18);
 }
 
+// Para saber si un número es par su residuo tiene que ser igual a cero (0)
+// En caso contrario si el número no es par, será impar.
+
 void numParImp(int numero) {
   String esParONo;
 

@@ -6,13 +6,13 @@ void main() {
   print(promedio(lista));
 }
 
-// El promedio de los números calculados será solo para enteros
-// Para caso contrario solo se tendría que cambiar el tipo de dato admitido de la lista de 'int' a 'num'
+// El promedio es la suma aritmética de un grupo de números entre la
+// la cantidad de números en el grupo.
 num promedio(List<int> listConNum) {
   int cont = 0;
   int totalNum = listConNum.length;
 
-  for (int i in listConNum) cont += i;
+  for (int numEnList in listConNum) cont += numEnList;
 
   return cont / totalNum;
 }

@@ -7,6 +7,8 @@ void main() {
   print('El factorial de 13 es: ${factorial(13)}');
 }
 
+// Para calcular el factorial del número proporcinado se irá sumando el número proporcionado (n)
+// la cantidad de veces de su antecesor (n-1) hasta que n-(algo) = 0.
 int factorial([int? numero]) {
   if (numero == 0 || numero == 1)
     return 1;

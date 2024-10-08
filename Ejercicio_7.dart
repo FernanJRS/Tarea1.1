@@ -7,6 +7,8 @@ void main() {
   print('El número más pequeño de la lista es: ${numPeq(lista)}');
 }
 
+// Se irá comparando cada número proporcionado en la lista de manera que una variable
+// irá guardando el valor más pequeño encontrado en la lista.
 num numPeq(List<num> listConNum) {
   num referencia = listConNum[0];
 
